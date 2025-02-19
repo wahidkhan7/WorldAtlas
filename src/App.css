@@ -351,6 +351,9 @@ nav ul {
     display: flex;
     justify-content: end;
   }
+  &Link {
+    text-decoration: none;
+  }
 }
 
 ul {
@@ -527,9 +530,11 @@ contact us page
     gap: 3.2rem;
     width: 100%;
     max-width: 48rem;
+   
 
     & input,
     & textarea {
+      resize: none;
       font-family: "urbanist";
       background-color: #000;
       font-size: 1.6rem;
