@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Country from './pages/Country'
 import AppLayout from './component/Layout/AppLayout'
 import ErrorPages from './pages/ErrorPages'
+import CountryDetails from './component/UI/CountryDetails'
 
 const router = createBrowserRouter([
     {
@@ -19,16 +20,21 @@ const router = createBrowserRouter([
           element:<Home/>
         },
         {
-          path:"/about",
+          path:"about",
           element:<About/>
         },
         {
-          path:"/contact",
+          path:"contact",
           element:<Contact/>
         },
         {
-          path:"/country",
+          path:"country",
           element:<Country/>
+        },
+        {
+          path:"country/:id",   // its is simple a path but : symbol indicate a dynamic path or route
+          element:<CountryDetails/>
+
         }
       ]
     }

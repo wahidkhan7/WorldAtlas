@@ -43,7 +43,7 @@ const Footer = () => {
 
       <div className='footer-menu'>
         <ul>
-          <li><Link style={{"text-decoration":"none"}}  to="/" >Home</Link></li>
+          <li><Link   to="/" >Home</Link></li>
           <li><Link to="https://www.instagram.com" target='_blank'>social</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           
