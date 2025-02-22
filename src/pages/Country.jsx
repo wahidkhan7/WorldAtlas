@@ -76,16 +76,18 @@ const Country = () => {
   if (isPending) {
     return <Loader />;
   }
+  console.log(search,filter);
+  
    const searchCountry=(country)=>{
     if(search)
     {
-      return country.name.common.includes(search)
+      return country.name.common.toLowerCase().includes(search.toLowerCase())
     }
     else{
       return country
     }
   }
-    const filterRegion=(country)=>{
+  const filterRegion=(country)=>{
       if(filter=='all')
       {
         return country
@@ -107,12 +109,14 @@ const Country = () => {
        setSearch={setSearch}
        filter={filter}
        setFilter={setFilter}
+       countries={countries}
+       setCountries={setCountries}
        />
 
      
       <ul className="grid grid-four-cols">
         {
-       filterCountries.map((curCountry,index) => (
+         filterCountries.map((curCountry,index) => (
           <CountryCard key={index} country={curCountry} />
         ))
         }

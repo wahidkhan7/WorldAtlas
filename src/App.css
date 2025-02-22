@@ -451,7 +451,8 @@ country Card
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 230px;
+  /* justify-content: space-between; */
   margin-bottom: 3.2rem;
 
   & .container-card {
@@ -606,4 +607,11 @@ contact us Page ends here
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.search-input{
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: 50px;
+  
 }
