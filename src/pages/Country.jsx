@@ -48,10 +48,13 @@ import React, { useEffect, useState, useTransition } from 'react';
 import { getData } from '../api/Service';
 import Loader from '../component/UI/Loader';
 import CountryCard from '../component/UI/CountryCard';
+import SearchFilter from '../component/UI/SearchFilter';
 
 const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
+  const [search,setSearch] = useState()
+  const [filter,setFilter] = useState("all")
 
   useEffect(() => {
     startTransition(async () => {
@@ -73,13 +76,43 @@ const Country = () => {
   if (isPending) {
     return <Loader />;
   }
+   const searchCountry=(country)=>{
+    if(search)
+    {
+      return country.name.common.includes(search)
+    }
+    else{
+      return country
+    }
+  }
+    const filterRegion=(country)=>{
+      if(filter=='all')
+      {
+        return country
+      }
+      else{
+        return country.region==filter
+      }
+
+    }
+
+   
+   let filterCountries = countries.filter((country)=> searchCountry(country) && filterRegion(country))
+  
 
   return (
     <section className="country-section">
+       <SearchFilter
+       search={search}
+       setSearch={setSearch}
+       filter={filter}
+       setFilter={setFilter}
+       />
+
      
       <ul className="grid grid-four-cols">
         {
-        countries.map((curCountry,index) => (
+       filterCountries.map((curCountry,index) => (
           <CountryCard key={index} country={curCountry} />
         ))
         }

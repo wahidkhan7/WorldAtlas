@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import Country from './pages/Country'
 import AppLayout from './component/Layout/AppLayout'
 import ErrorPages from './pages/ErrorPages'
-import CountryDetails from './component/UI/CountryDetails'
+import { CountryDetails } from './component/UI/CountryDetails'
 
 const router = createBrowserRouter([
     {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
           element:<Country/>
         },
         {
-          path:"country/:id",   // its is simple a path but : symbol indicate a dynamic path or route
+          path:"country/:id",   // its is simple a path but : symbol indicate a dynamic path or route and id will store specific country name
           element:<CountryDetails/>
 
         }

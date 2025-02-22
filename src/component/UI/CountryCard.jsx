@@ -13,7 +13,8 @@ const CountryCard = ({country}) => {
             <p> <span className='card-description'>Capital:</span>{country.capital}</p>
             <p> <span className='card-description'>Region:</span>{country.region}</p>
             <p> <span className='card-description'>Population:</span>{country.population.toLocaleString()}</p>
-           <Link style={{"text-decoration":"none"}} to={`/country/${country.name.common}`}>
+
+           <Link style={{"textDecoration":"none"}} to={`/country/${country.name.common}`}>
             <button className=' btn btn-darken btn-inline  bg-white-box'>Read More <FaArrowRightLong/> </button>
             </Link>
 

@@ -484,6 +484,7 @@ country Card
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-transform: capitalize;
+    
 
     & option {
       background: linear-gradient(71deg, #080509, #1a171c, #080509);
