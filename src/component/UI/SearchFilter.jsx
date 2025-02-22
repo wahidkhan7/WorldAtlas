@@ -21,18 +21,18 @@ const SearchFilter = ({search,setSearch,filter,setFilter,countries,setCountries}
   }
 
   return (
-    <section className='section-searchFilter container'>
+    <section className='section-searchFilter container '>
         <input className='search-input' type="text" name="name" value={search} placeholder='Search' onChange={(e)=>setSearch(e.target.value)}/>
 
         <div>
-          <button onClick={()=>sortCountries('asc')}>Asc</button>
-        </div>
-        <div>
-          <button onClick={()=>sortCountries('desc')}>Desc</button>
+          <button onClick={()=>sortCountries('asc')} className='sort-button' >Asc</button>
+           </div>
+           <div>
+          <button onClick={()=>sortCountries('desc')} className='sort-button' >Desc</button>
         </div>
 
         <div>
-            <select className='select-section' value={filter} onChange={(e)=>setFilter(e.target.value)}>
+            <select className='select-section ' value={filter} onChange={(e)=>setFilter(e.target.value)}>
                 <option value="all">All</option>
                 <option value="Africa">Aferica</option>
                 <option value="Americas">America</option>
