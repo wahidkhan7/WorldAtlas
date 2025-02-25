@@ -1,5 +1,6 @@
 import React from 'react'
 import countryfacts from '../api/countryData.json'
+import AboutCard from '../component/UI/AboutCard'
 
 const About = () => {
   return (
@@ -8,9 +9,9 @@ const About = () => {
         <br />
         we're proud of
       </h2>
+    
 
-
-      <div className='gradient-cards'>
+     {/* <div className='gradient-cards'>
         {
           countryfacts.map((country)=>{
             let {id,countryName,capital,population,interestingFact}=country
@@ -28,8 +29,20 @@ const About = () => {
             )
           })
         }
+        </div> */}
 
-      </div>
+
+
+       <div className='gradient-cards'>
+       {
+          countryfacts.map((country)=>{
+            return(
+            <AboutCard key={country.id} country={country}/>
+            )
+
+          })
+        }
+        </div>
    </section>
   )
 }

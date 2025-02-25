@@ -1,60 +1,124 @@
 
 [
-    {
-      "id": 1,
-      "countryName": "World",
-      "capital": "No Capital",
-      "population": "Null",
-      "interestingFact": "There are 195 countries in the world today, including 193 United Nations member states and 2 observer states."
-    },
-    {
-      "id": 2,
-      "countryName": "Nepal",
-      "capital": "Kathmandu",
-      "population": 29609623,
-      "interestingFact": "Nepal is home to Mount Everest, the tallest mountain in the world, standing at 8,848 meters."
-    },
-    {
-      "id": 3,
-      "countryName": "Egypt",
-      "capital": "Cairo",
-      "population": 104258327,
-      "interestingFact": "The Pyramids of Giza are one of the Seven Wonders of the Ancient World."
-    },
-    {
-      "id": 4,
-      "countryName": "Australia",
-      "capital": "Canberra",
-      "population": 25687041,
-      "interestingFact": "Australia is home to the Great Barrier Reef, the largest coral reef system in the world."
-    },
-    {
-      "id": 5,
-      "countryName": "Brazil",
-      "capital": "Brasilia",
-      "population": 213993437,
-      "interestingFact": "Brazil is home to the Amazon Rainforest, the largest tropical rainforest in the world."
-    },
-    {
-      "id": 6,
-      "countryName": "France",
-      "capital": "Paris",
-      "population": 67407241,
-      "interestingFact": "The Eiffel Tower in Paris was once the tallest man-made structure in the world."
-    },
-    {
-      "id": 7,
-      "countryName": "Russia",
-      "capital": "Moscow",
-      "population": 1324216107,
-      "interestingFact": "Russia is the largest country in the world by area, covering more than 17 million square kilometers."
-    },
-    {
-      "id": 8,
-      "countryName": "China",
-      "capital": "Beijing",
-      "population": 1444216107,
-      "interestingFact": "The Great Wall of China is visible from space on rare occasions and many beautuful wall are present over there "
-    }
+  { 
+    "id":"1",
+    "name": "Canada",
+    "capital": "Ottawa",
+    "population": 38000000,
+    "region": "North America",
+    "official_language": "English, French",
+    "currency": "Canadian Dollar (CAD)",
+    "major_landmark": "Niagara Falls",
+    "national_animal": "Beaver",
+    "interesting_fact": "Canada has the longest coastline of any country in the world, stretching over 202,000 km. It also has more lakes than the rest of the world combined. The country is known for its cold winters, but some regions experience hot summers."
+  },
+  {
+    "id":"2",
+    "name": "Japan",
+    "capital": "Tokyo",
+    "population": 125000000,
+    "region": "Asia",
+    "official_language": "Japanese",
+    "currency": "Japanese Yen (JPY)",
+    "major_landmark": "Mount Fuji",
+    "national_animal": "Japanese Macaque",
+    "interesting_fact": "Japan has more than 6,800 islands, with four main ones making up most of the landmass. It experiences around 1,500 earthquakes every year. The country is also home to the world’s oldest company, Kongo Gumi, which was founded in 578 AD."
+  },
+  {
+    "id":"3",
+    "name": "Brazil",
+    "capital": "Brasília",
+    "population": 214000000,
+    "region": "South America",
+    "official_language": "Portuguese",
+    "currency": "Brazilian Real (BRL)",
+    "major_landmark": "Christ the Redeemer",
+    "national_animal": "Jaguar",
+    "interesting_fact": "Brazil is home to the Amazon Rainforest, the world's largest tropical rainforest, covering around 60% of the country. The Amazon River, which flows through Brazil, is the second longest river in the world. Brazil is also famous for its massive Carnival festival."
+  },
+  {
+    "id":"4",
+    "name": "Germany",
+    "capital": "Berlin",
+    "population": 83000000,
+    "region": "Europe",
+    "official_language": "German",
+    "currency": "Euro (EUR)",
+    "major_landmark": "Brandenburg Gate",
+    "national_animal": "Federal Eagle",
+    "interesting_fact": "Germany is known for having over 1,500 different types of sausages and more than 1,200 breweries. The country is also home to the world’s first highway system, the Autobahn, which has sections with no speed limit. Oktoberfest, the world's largest beer festival, is held in Germany."
+  },
+  {
+    "id":"5",
+    "name": "Australia",
+    "capital": "Canberra",
+    "population": 26000000,
+    "region": "Oceania",
+    "official_language": "English",
+    "currency": "Australian Dollar (AUD)",
+    "major_landmark": "Sydney Opera House",
+    "national_animal": "Kangaroo",
+    "interesting_fact": "Australia is home to more kangaroos than people, with nearly twice as many kangaroos as humans. The Great Barrier Reef, located off its coast, is the largest coral reef system in the world. Australia is also the only country that is also a continent."
+  },
+  {
+    "id":"6",
+    "name": "India",
+    "capital": "New Delhi",
+    "population": 1400000000,
+    "region": "Asia",
+    "official_language": "Hindi, English",
+    "currency": "Indian Rupee (INR)",
+    "major_landmark": "Taj Mahal",
+    "national_animal": "Bengal Tiger",
+    "interesting_fact": "India is the world's largest democracy, with over 900 million eligible voters. It is also home to the world's oldest living city, Varanasi, which dates back over 3,000 years. The country has 22 official languages and more than 1,600 dialects spoken."
+  },
+  {
+    "id":"7",
+    "name": "South Africa",
+    "capital": "Pretoria (administrative), Cape Town (legislative), Bloemfontein (judicial)",
+    "population": 60000000,
+    "region": "Africa",
+    "official_language": "11 official languages, including English, Zulu, and Afrikaans",
+    "currency": "South African Rand (ZAR)",
+    "major_landmark": "Table Mountain",
+    "national_animal": "Springbok",
+    "interesting_fact": "South Africa has three capital cities, each serving a different purpose. It is the only country in the world to have voluntarily given up its nuclear weapons. The country is also known as the 'Rainbow Nation' due to its diverse cultures and languages."
+  },
+  {
+    "id":"8",
+    "name": "United Kingdom",
+    "capital": "London",
+    "population": 67000000,
+    "region": "Europe",
+    "official_language": "English",
+    "currency": "Pound Sterling (GBP)",
+    "major_landmark": "Big Ben",
+    "national_animal": "Lion",
+    "interesting_fact": "Big Ben is actually the name of the bell inside the clock tower, not the tower itself. The UK has the world’s oldest underground railway system, the London Underground. The Queen’s Guard at Buckingham Palace is famous for not reacting, but they are allowed to speak in emergencies."
+  },
+  {
+    "id":"9",
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "population": 126000000,
+    "region": "North America",
+    "official_language": "Spanish",
+    "currency": "Mexican Peso (MXN)",
+    "major_landmark": "Chichen Itza",
+    "national_animal": "Golden Eagle",
+    "interesting_fact": "Mexico introduced chocolate to the world; it was originally used by the Aztecs as a bitter drink. The country is home to the world’s largest pyramid, the Great Pyramid of Cholula, which is even bigger than Egypt’s Great Pyramid. Mexico City is built on a lake and is sinking every year."
+  },
+  {
+    "id":"10",
+    "name": "Egypt",
+    "capital": "Cairo",
+    "population": 104000000,
+    "region": "Africa",
+    "official_language": "Arabic",
+    "currency": "Egyptian Pound (EGP)",
+    "major_landmark": "Great Pyramid of Giza",
+    "national_animal": "Steppe Eagle",
+    "interesting_fact": "The Great Pyramid of Giza is the oldest of the Seven Wonders of the Ancient World and the only one still standing. Ancient Egyptians invented one of the first forms of writing, known as hieroglyphics. The country is also famous for the Nile River, the longest river in the world."
+  }
   ]
   
